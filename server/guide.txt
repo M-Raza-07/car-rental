@@ -1,0 +1,25 @@
+1st need npm init -y
+2nd need these npm packages 'npm i express cors dotenv jsonwebtoken bcrypt mongoose'
+3rd after that need npm instal --save-dev nodemon
+4th add these packages in server.js file
+import exprss from 'express';
+import 'dotenv/config';
+import cors from 'cors';
+
+5th code server file
+6th package.json file add under "main" -- "type" : "module",
+7th after that remove "test" and replace "server" : "nodemon server.js",
+start the server npm run server
+
+create the mongodb project in MongoDB atlas site and connect it to main project 
+    1st-create .env file create MONGODB_URI
+    2nd create config folder - db.js
+    3rd connect in the server.js file 
+
+
+connecting back-end with fron-end
+    1- in client folder .env add VITE_BASE_URL= 'back-end url' eg: "http://localhost:3000" remember to remove last /
+    2- create context file in src(context)->AppContext.jsx->create context->to use it main.jsx import 'AppProvider' from context.AppContext.jsx -> wrap <> <App /> </ AppProvider>
+    3- npm i axios in frontend 
+    4- npm i react-hot-toast
+    5- 
